@@ -4,10 +4,10 @@
 #define SW_GPIO_SIZE 9                // Number of switches
 #define LED_GPIO_SIZE 7               // Number of switch LEDs
 #define ENC_GPIO_SIZE 2               // Number of encoders
-#define ENC_PPR 24                    // Encoder PPR
+#define ENC_PPR 600                   // Encoder PPR
 #define MOUSE_SENS 5                  // Mouse sensitivity multiplier
-#define ENC_DEBOUNCE true             // Encoder Debouncing
-#define SW_DEBOUNCE_TIME_US 4000      // Switch debounce delay in us
+#define ENC_DEBOUNCE false            // Encoder Debouncing
+#define SW_DEBOUNCE_TIME_US 10000      // Switch debounce delay in us
 #define ENC_PULSE (ENC_PPR * 4)       // 4 pulses per PPR
 #define REACTIVE_TIMEOUT_MAX 1000000  // HID to reactive timeout in us
 #define WS2812B_LED_SIZE 10           // Number of WS2812B LEDs
@@ -23,10 +23,10 @@ const uint8_t SW_KEYCODE[] = {
     HID_KEY_M, HID_KEY_A, HID_KEY_B, HID_KEY_1,
 };
 const uint8_t SW_GPIO[] = {
-    4, 6, 8, 10, 12, 14, 27, 18, 20,
+    4, 6, 8, 10, 16, 18, 14, 20, 12,
 };
 const uint8_t LED_GPIO[] = {
-    5, 7, 9, 11, 13, 15, 21,
+    5, 7, 9, 11, 17, 19, 13,
 };
 const uint8_t ENC_GPIO[] = {0, 2};      // L_ENC(0, 1); R_ENC(2, 3)
 const bool ENC_REV[] = {false, false};  // Reverse Encoders
