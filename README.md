@@ -28,6 +28,15 @@ TODO:
 - Store last mode in flash memory (probably implement into above TODO if possible) https://www.raspberrypi.org/forums/viewtopic.php?t=305570
 - store configuration settings in a text file? consider implementing littlefs https://github.com/littlefs-project/littlefs https://www.raspberrypi.org/forums/viewtopic.php?t=313009 https://www.raspberrypi.org/forums/viewtopic.php?p=1894014#p1894014
 
+Build:
+
+- Go to create `build` folder
+- Go to build folder
+- `export PICO_SDK_PATH=../../pico-sdk`
+- `cmake ..`
+- `make -j4`
+- files in `build/src/`
+
 How to Use:
 
 - For basic flashing, see README in build_uf2

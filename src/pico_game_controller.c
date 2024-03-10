@@ -289,7 +289,7 @@ void init() {
   }
 
   // Debouncing Mode
-  debounce_mode = &debounce_deferred;
+  debounce_mode = &debounce_eager;
 
   // Disable RGB
   if (gpio_get(SW_GPIO[8])) {
